@@ -6,6 +6,8 @@
 # specific data formats #
 #########################
 *.csv
+*.xlsx
+*.xls
 
 
 # notebook formats #
