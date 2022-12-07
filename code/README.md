@@ -1,8 +1,11 @@
 # Code Directory
 
-This folder contains the notebooks and scripts that are used for the analysis:
+This folder contains the notebooks and scripts that are used for the analysis. The description, input, and output of the notebooks are presented in the below table.
 
-* **data_cleaning**, which contains the notebook for cleaning the `sentencing_raw` dataset. This notebook produces the `sentencing_analysis`,
-which is used for the analysis.
-* **exploratory_analysis**, which contains the notebook for producing the preliminary graphs that are stored in the output/ directory. 
-* **intake_data_cleaning**, which contains the notebook for cleaning the `intake` Cook County dataset. [**To be updated**]
+| Notebook      		 				| Description								   										   	| Input files 																											| Outputs 																													|
+| ----------- 		 	 				| ----------- 																			| ------------------------------																						| ----------------																											|
+| **00_sentencing_data_cleaning**		| Notebook for cleaning the raw sentencing data, and creating analytic sentencing data	| [`sentencing_raw`](https://drive.google.com/file/d/1rpqfudNOPpYygSTDxxj0YWuHuPIwJ9NJ/view?usp=sharing) csv dataset	| [`sentencing_analysis`](https://drive.google.com/file/d/1rxCJdUOBRAC366GC97ZktlvrDu6epGR1/view?usp=sharing) csv dataset	|
+| **01_intake_data_cleaning** 			| Notebook for cleaning the raw intake data, and creating the analytic intake data   	| [`intake_raw`](https://drive.google.com/file/d/1ALl6ulL1TrNn9nun5-TJp152IbGMWEse/view?usp=sharing) csv dataset		| [`intake_analysis`](https://drive.google.com/file/d/1ALAFWYVg1UY-bG_DspF7XN0YiyZWOEG3/view?usp=sharing) csv dataset		|
+| **02_summary_stats**					| Notebook for descriptive analysis in the final report									| <ul><li>[`intake_analysis`](https://drive.google.com/file/d/1ALAFWYVg1UY-bG_DspF7XN0YiyZWOEG3/view?usp=sharing) csv dataset</li><li>[`sentencing_analysis`](https://drive.google.com/file/d/1rxCJdUOBRAC366GC97ZktlvrDu6epGR1/view?usp=sharing) csv dataset</li></ul> | Tables 3-5, Figure 1 |
+| **03_exploratory_analysis** 			| Notebook for exploratory data analysis, and producing some of the descriptive graphs in the final report | <ul><li>[`intake_analysis`](https://drive.google.com/file/d/1ALAFWYVg1UY-bG_DspF7XN0YiyZWOEG3/view?usp=sharing) csv dataset</li><li>[`sentencing_analysis`](https://drive.google.com/file/d/1rxCJdUOBRAC366GC97ZktlvrDu6epGR1/view?usp=sharing) csv dataset</li></ul> | Figure A.2, Figures A.4-A.6 |
+| **04_regression_exploration** 		| Notebook for regression analysis using `rd_plot` | <ul><li>[`intake_analysis`](https://drive.google.com/file/d/1ALAFWYVg1UY-bG_DspF7XN0YiyZWOEG3/view?usp=sharing) csv dataset</li><li>[`sentencing_analysis`](https://drive.google.com/file/d/1rxCJdUOBRAC366GC97ZktlvrDu6epGR1/view?usp=sharing) csv dataset</li></ul> | Tables 1-2, Figures 2-9 | 
